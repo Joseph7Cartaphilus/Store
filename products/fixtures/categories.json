@@ -1,42 +1,42 @@
 [
   {
     "model": "products.productcategory",
-    "pk": 1,
+    "pk": 6,
     "fields": {
-      "name": "������",
-      "description": "�������� ��� ������"
+      "name": "Clothes",
+      "description": "dress fashionably"
     }
   },
   {
     "model": "products.productcategory",
-    "pk": 2,
+    "pk": 7,
     "fields": {
-      "name": "�������",
-      "description": "����� �� ����� �����"
+      "name": "Shoes",
+      "description": "shoes are important"
     }
   },
   {
     "model": "products.productcategory",
-    "pk": 3,
+    "pk": 8,
     "fields": {
-      "name": "�����",
-      "description": "��� �������� �������"
+      "name": "New products",
+      "description": "the newest is here"
     }
   },
   {
     "model": "products.productcategory",
-    "pk": 4,
+    "pk": 9,
     "fields": {
-      "name": "����������",
-      "description": "������, ��� �� ������� �����"
+      "name": "Gifts",
+      "description": "all loving gifts"
     }
   },
   {
     "model": "products.productcategory",
-    "pk": 5,
+    "pk": 10,
     "fields": {
-      "name": "�������",
-      "description": "��� �� �����"
+      "name": "Accessories",
+      "description": "exactly for fashion"
     }
   }
 ]
