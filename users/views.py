@@ -47,3 +47,8 @@ def profile(request):
     return render(request, 'users/profile.html', {
         'form': form
     })
+
+
+def logout(request):
+    auth.logout(request)
+    return HttpResponseRedirect(reverse('index'))
