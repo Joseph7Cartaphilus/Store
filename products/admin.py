@@ -1,6 +1,7 @@
 from django.contrib import admin
 
 from .models import ProductCategory, Product
+from users.models import User
 
 
 @admin.register(Product)
@@ -12,6 +13,11 @@ class ProductAdmin(admin.ModelAdmin):
 
 @admin.register(ProductCategory)
 class ProductCategory(admin.ModelAdmin):
-    list_display = ['name', 'description'] # настройка отображения
+    list_display = ['name', 'description']  # настройка отображения
     list_per_page = 5  # Пагинация
 
+
+@admin.register(User)
+class User(admin.ModelAdmin):
+    list_display = ['username', 'first_name', 'last_name', 'email', 'image']
+    filter_horizontal = ['groups', 'user_permissions']
