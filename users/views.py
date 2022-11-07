@@ -48,7 +48,7 @@ def profile(request):
         form = UserProfileForm(instance=user)
     return render(request, 'users/profile.html', {
         'form': form,
-        'basket': Basket.objects.first(user=user),
+        'baskets': Basket.objects.filter(user=user)
     })
 
 
