@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import ProductCategory, Product
+from .models import ProductCategory, Product, Basket
 from users.models import User
 
 
@@ -21,3 +21,8 @@ class ProductCategory(admin.ModelAdmin):
 class User(admin.ModelAdmin):
     list_display = ['username', 'first_name', 'last_name', 'email', 'image']
     filter_horizontal = ['groups', 'user_permissions']
+
+
+@admin.register(Basket)
+class Basket(admin.ModelAdmin):
+    list_display = ['user', 'product', 'quantity']
