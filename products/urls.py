@@ -19,5 +19,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('products/', views.products, name='products')
+    path('products/', views.products, name='products'),
+    path('baske_add/<int:product_id>', views.basket_add, name='basket_add'),
 ]
