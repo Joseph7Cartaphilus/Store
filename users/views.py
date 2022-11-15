@@ -37,6 +37,7 @@ def register(request):
         'form': form
     })
 
+
 @login_required
 def profile(request):
     user = request.user
